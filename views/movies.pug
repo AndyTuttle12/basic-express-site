@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+		title= title
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+	body
+		block content
+			h1.text-center #{title}
+			div.container
+
+				each movie, index in movieData.results
+					div.col-sm-4
+						img( src=imageUrl+movie.poster_path)

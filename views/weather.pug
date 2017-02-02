@@ -1,0 +1,43 @@
+html
+	head
+		title= title
+		
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel='stylesheet', href='/stylesheets/weather-styles.css')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js")
+		script(src='/javascripts/weather-config.js')
+		script(src='/javascripts/weather-scripts.js')
+	body
+		block content
+
+			h1.text-center= title
+
+			div.container.text-center
+				div(
+					.row
+					.text-center
+					.weather-row
+				) 
+					h1 Weather Today
+					form#weather-form
+						label Please Search for your location:
+							input(
+								id="location"
+								type="text"
+								placeholder="Location (City, State or Zip)"
+							) 
+
+					div#currentTemp
+
+					canvas#weather-canvas
+
+					div#weather-details
+						div#wind
+							| Wind: 
+							span
+							| mph
+
+						div#humidity
+							| Humidity: 
+							span
+							| %

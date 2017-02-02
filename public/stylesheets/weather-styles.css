@@ -1,0 +1,37 @@
+body{
+}
+
+.container{
+	background-color: #ddd;
+	height: 100vh;
+	color: #0aa;
+}
+
+.row{
+	background-color: rgba(255,255,255,0.6);
+	border-radius: 10px;
+	max-width: 60%;
+	margin: 100px auto;
+}
+
+form{
+	margin-top: 20px;
+}
+
+input{
+	width: 200px;
+}
+
+#wind{
+	float: left;
+	margin: 10px 0 20px 140px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#humidity{
+	float: right;
+	margin: 10px 140px 20px 0;
+	font-size: 16px;
+	font-weight: bold;
+}

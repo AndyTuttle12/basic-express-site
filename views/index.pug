@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1= title
+	p Welcome to #{title}
+	p Some of my hobbies...
+	- for (var i = 0; i < arr.length; i++)
+		li #{arr[i]}
